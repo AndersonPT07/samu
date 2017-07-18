@@ -8,12 +8,11 @@ import {SamuService} from './services/samu.service'
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers: [UFService,SamuService]
+  templateUrl: './TodosOsDados.component.html',
+  styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit {
+export class TodosOsDadosComponent implements OnInit {
     ufs : UF[];
     dados_da_samu : Dados[];
     minhaUF : UF;

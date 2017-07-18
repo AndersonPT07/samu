@@ -1,0 +1,10 @@
+<div style="text-align:center" class="title">
+  <h1>{{minhaUF.nome}}</h1>
+  <p>ID: {{minhaUF.id}}</p>
+  <p>ÁREA: {{minhaUF.area}}</p>
+  <p>média de municípios atendidos: {{media}}</p>
+</div>
+<ul class="final">
+<li *ngFor="let final1 of final">
+<span class="badge"><b>Quantidade de municípios atendidos:</b> {{final1.valor}}</span> <b>ano:</b> {{final1.ano}}
+</li>

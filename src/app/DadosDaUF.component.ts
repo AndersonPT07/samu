@@ -8,12 +8,11 @@ import {SamuService} from './services/samu.service'
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers: [UFService,SamuService]
+  templateUrl: './DadosDaUF.component.html',
+  styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit {
+export class DadosDaUFComponent implements OnInit {
     ufs : UF[];
     dados_da_samu : Dados[];
     minhaUF : UF;
@@ -33,7 +32,7 @@ export class AppComponent implements OnInit {
         this.dados_da_samu = this.samuService.getAllMunicipiosAtendidosPorEstado();
         this.getPorID(this.numero_magico);
         this.getPorUFMunicipiosAtendidosPorEstado(this.minhaUF);
-        this.numerosdeatendimentoemedia();
+        //this.numerosdeatendimentoemedia();
 }
 
 getPorID(id: number): void {
@@ -52,7 +51,7 @@ getPorUFMunicipiosAtendidosPorEstado(ufselecionada: UF): void{
   }
 }
 
-numerosdeatendimentoemedia(): void{
+/*numerosdeatendimentoemedia(): void{
 for(let item2 of this.dados_da_samu){
   if(item2.uf_id == this.numero_magico){
     this.atendimentos = this.atendimentos + item2.uf_id;
@@ -60,6 +59,6 @@ for(let item2 of this.dados_da_samu){
     }
   }
   this.media = this.atendimentos/this.numerosDeAtendimento;
-}
+}*/
 
 }
