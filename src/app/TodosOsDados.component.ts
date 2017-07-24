@@ -15,6 +15,7 @@ import {SamuService} from './services/samu.service'
 export class TodosOsDadosComponent implements OnInit {
     ufs : UF[];
     dados_da_samu : Dados[];
+    //dados_da_samu2 : Dados[];
     minhaUF : UF;
     numero_magico = 12;
     dadosSamu : Dados;
@@ -59,6 +60,12 @@ for(let item2 of this.dados_da_samu){
     }
   }
   this.media = this.atendimentos/this.numerosDeAtendimento;
+
+  /*this.dados_da_samu2 = this.dados_da_samu;
+  for(let itemID of this.dados_da_samu2)
+    if(itemID.uf_id == this.ufs.id){
+      this.dados_da_samu2.uf_id = this.ufs.nome;
+    }*/
 }
 
 }
