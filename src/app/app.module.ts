@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import {resumoComponent} from './resumo.component'
 import {TodosOsDadosComponent} from './TodosOsDados.component'
 import {DadosDaUFComponent} from './DadosDaUF.component'
+import {UFService} from './services/uf.service'
+import {SamuService} from './services/samu.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +32,7 @@ import {DadosDaUFComponent} from './DadosDaUF.component'
   }
 ])
   ],
-  providers: [],
+  providers: [UFService,SamuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

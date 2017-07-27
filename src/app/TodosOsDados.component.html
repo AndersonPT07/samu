@@ -8,8 +8,6 @@
 <li *ngFor="let final1 of final">
 <span class="badge"><b>Quantidade de municípios atendidos:</b> {{final1.valor}}</span> <b>ano:</b> {{final1.ano}}
 </li>
-TESTEEEEEEEEEEE
-<ul class="dados_da_samu2">
-<li *ngFor="let dados_da_samu2 of final">
-<span class="badge"><b>Nome:</b> {{dados_da_samu2.id}} <b>Quantidade de municípios atendidos:</b> {{dados_da_samu2.valor}} <b>ano:</b> {{dados_da_samu2.ano}}</span>
+<li *ngFor="let atend of dados">
+  Uf: {{atend.uf.nome}} Ano: {{atend.ano}}  Municípios atendidos:{{atend.valor}}
 </li>

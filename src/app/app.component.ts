@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.ufs = this.ufService.getAll();
-        this.dados_da_samu = this.samuService.getAllMunicipiosAtendidosPorEstado();
+        //this.dados_da_samu = this.samuService.getAllMunicipiosAtendidosPorEstado();
         this.getPorID(this.numero_magico);
         this.getPorUFMunicipiosAtendidosPorEstado(this.minhaUF);
         this.numerosdeatendimentoemedia();

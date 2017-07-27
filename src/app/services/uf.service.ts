@@ -12,4 +12,16 @@ export class UFService {
   getPorID(id: number) : UF {
     return UFs.find(uf => uf.id == id);
   }
+  
+  getUF(id:number): UF{
+    let uf:UF;
+    for(let entrada of UFs)
+    {
+      if(entrada.id == id){
+        uf = entrada;
+        break;
+      }
+    }
+    return uf;
+}
 }
